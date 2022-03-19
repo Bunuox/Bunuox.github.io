@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/c5e16fb593.js" crossorigin="anonymous"></script>
+    <style>
+        .rectangle-dark {
+            width: 80px;
+            height: 25px;
+            background: rgb(53, 49, 49);
+            border-radius: 500px;
+            text-align: center;
+            color: white;
+            flex-wrap: wrap;
+            display: flex;
+        }
+
+        .rectangle-light {
+            width: 110px;
+            height: 30px;
+            background: white;
+            border-radius: 500px;
+            padding: 5px;
+            text-align: center;
+            color: rgb(53, 49, 49);
+            flex-wrap: wrap;
+            display: flex;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        img {
+            flex-wrap: wrap;
+            display: flex;
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            width: auto;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 1250px;
+            background: rgb(53, 49, 49);
+            padding: 20px;
+            color: white;
+            text-align: left;
+            flex-wrap: wrap;
+            word-wrap: break-word;
+        }
+
+        #nav li {
+            width: 100px;
+        }
+
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(219, 40, 64);
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: white;
+            height: 300px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+
+    <title>Bünyamin CV</title>
+
+<body>
+    <header>Bunyamin Bilgehan Kilicer</header>
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    <img src="bnu.jpg">
+                </li>
+                <li>
+                    <p>
+                        <i class="fa-solid fa-map-pin"></i>
+                        Küçükçekmece, İstanbul
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +90 546 234 8235
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        bunyamin.klcr@outlook.com
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <a
+                            href="https://www.linkedin.com/in/bunyaminkilicer">https://www.linkedin.com/in/bunyaminkilicer/</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i class="fa-brands fa-hackerrank"></i>
+                        <a href="https://www.hackerrank.com/bunyo_klcrr">
+                            https://www.hackerrank.com/bunyo_klcrr
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <i class="fa-brands fa-github"></i>
+                        <a href="https://github.com/Bunuox">
+                            https://github.com/Bunuox
+                        </a>
+                    </p>
+                </li>
+
+                <li>
+
+                    <h1>Languages</h1>
+                    English, Turkish
+                </li>
+                <li>
+                    <h1>Hobbies</h1>
+                    <p class="rectangle-light" style="display:inline-block">Reading</p>
+                    <p class="rectangle-light" style="display:inline-block">Trekking</p>
+                    <p class="rectangle-light" style="display:inline-block">Powerlifting</p>
+
+                    <br>
+                    <p class="rectangle-light" style="display:inline-block">Traveling</p>
+                    <p class="rectangle-light" style="display:inline-block">Swimming</p>
+                    <p class="rectangle-light" style="display:inline-block">Philosophy</p>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <h1><u>Experience</u></h1>
+                <h5>09/2019–01/2020</h5>
+                <p>Jr. Software Developer • Part Time • DNA 360 İletişim ve Danışmanlık LTD. ŞTİ.</p>
+                <ul>
+                    <li>
+                        I scraped data from N11, Hepsiburada, Trendyol with using Scrapy and Python
+                    </li>
+                    <li>
+                        I developed desktop applications using Facebook API, Twitter API in Python.
+                    </li>
+                    <li>
+                        I developed website with Django and Bootstrap.
+                    </li>
+                    <li>
+                        I used PostgreSQL for database operations and SQL queries.
+                    </li>
+                </ul>
+
+                <h5>04/2021-Present</h5>
+                <p>SAP PO Consultant • Full Time • DCG Bilişim</p>
+                <ul>
+                    <li>
+                        I took part in SAP S4/HANA projects of many corporate companies as a PO module consultant.
+                    </li>
+                    <li>
+                        I learned to work with a large project team.
+                    </li>
+                    <li>
+                        I saw the end-to-end design of a project and witnessed the transition phases to Go-Live.
+                    </li>
+                </ul>
+
+                <h1><u>Education</u></h1>
+                <h5>Kocaeli University, Kocaeli, Turkey</h5>
+                <ul>
+                    <li>
+                        09/2018– 09/2019, Computer Engineering.
+                    </li>
+                </ul>
+                <h5>İstanbul University – Cerrahpaşa, İstanbul, Turkey</h5>
+                <ul>
+                    <li>
+                        09/2019 – Present, Computer Engineering.
+                    </li>
+                </ul>
+                <h5>MDP Group SAP PI/PO Course</h5>
+                <ul>
+                    <li>
+                        I have took 30 hours of SAP PI/PO course by team leads from MDP Group.
+                    </li>
+                </ul>
+
+                <h1><u>Achievements</u></h1>
+                <h5>Kocaeli University High Honor Certificate</h5>
+                <p>I earned the right to receive this certificate by making 3.75 GPA in the 2018-2019 academic year.</p>
+
+                <h1><u>Abilities</u></h1>
+                <p class="rectangle-dark" style="display:inline-block">Swift</p>
+                <p class="rectangle-dark" style="display:inline-block">SwiftUI</p>
+                <p class="rectangle-dark" style="display:inline-block">UIKit</p>
+                <p class="rectangle-dark" style="display:inline-block">Postgre</p>
+                <br>
+                <p class="rectangle-dark" style="display:inline-block">Java</p>
+                <p class="rectangle-dark" style="display:inline-block">Firebase</p>
+                <p class="rectangle-dark" style="display:inline-block">C++</p>
+            </article>
+        </section>
+    </section>
+</body>
+</head>
+
+</html>
